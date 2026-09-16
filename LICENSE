@@ -1,0 +1,40 @@
+Copyright (c) 2026 The Deedar Project. All rights reserved.
+
+This repository is published as supporting evidence and documentation for a
+competition submission (4th International AI Championship, AIEF).
+
+PERMITTED
+
+  You may view, read and reference this repository for the purposes of
+  evaluating the submission, and cite it with attribution.
+
+NOT PERMITTED
+
+  No license is granted to copy, reproduce, modify, distribute, or make
+  commercial or derivative use of:
+
+    - the methods and system design described herein,
+    - the dataset construction method,
+    - the dataset, model weights or checkpoints (which are not included in
+      this repository),
+    - the source code of the inference worker, training pipeline or
+      storefront (which is not included in this repository),
+    - the text, diagrams, and images in this repository.
+
+  Images of identifiable persons included in this repository may not be
+  reproduced, redistributed or used for any purpose.
+
+THIRD-PARTY COMPONENTS
+
+  This project builds on third-party models and libraries, each governed by
+  its own license. Those licenses apply to those components and are not
+  altered or extended by this notice. Nothing here grants rights to any
+  third-party component.
+
+NO WARRANTY
+
+  This material is provided "as is", without warranty of any kind, express
+  or implied.
+
+For permissions, collaboration or reviewer access to withheld material,
+contact the project team.
