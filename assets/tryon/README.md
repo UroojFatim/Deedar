@@ -1,30 +1,41 @@
 # Try-On Output Samples
 
-Raw try-on outputs from the system. Put the image files here; the reading guide and what-to-look-for notes live in [`../../results/README.md`](../../results/README.md).
+19 real outputs from the deployed Deedar system — `1.jpeg` through `19.jpeg`.
 
-## Suggested naming
+**The reading guide, per-sample notes and weak-case list are in [`../../results/README.md`](../../results/README.md).** Start there; this file only covers the image format.
 
-Use a consistent scheme so a reviewer can pair inputs with outputs without guessing:
+## Format
+
+Each file is a single three-panel strip:
 
 ```
-sample-01-person.png      ← shopper input photo
-sample-01-garment.png     ← catalog garment (synthesised flat-lay)
-sample-01-output.png      ← generated try-on result
-
-sample-02-person.png
-sample-02-garment.png
-sample-02-output.png
-...
+┌──────────────┬──────────────┬──────────────┐
+│    LEFT      │    MIDDLE    │    RIGHT     │
+│ shopper's    │ catalog      │ generated    │
+│ input photo  │ garment      │ try-on       │
+│ (wearing a   │ (synthesised │ output       │
+│  different   │  flat-lay)   │              │
+│  outfit)     │              │              │
+└──────────────┴──────────────┴──────────────┘
 ```
 
-If a side-by-side composite already exists, `sample-01-comparison.png` works on its own and is easier for a reviewer to read at a glance.
+The left panel is the point: the person arrives wearing something else entirely. The system removes that outfit and renders the target garment on the same body, same pose, same face. So the test is simply — *does the right panel show the middle garment on the left person?*
 
-## Include at least one weak case
+One composite per sample rather than three separate files, so a reviewer reads each result at a glance instead of pairing filenames.
 
-Name it clearly — `sample-XX-weakcase-dupatta.png` — and reference it in [`../../docs/limitations.md`](../../docs/limitations.md).
+## Why the filenames are bare numbers
 
-Showing a known failure alongside good results reads as control over the system. Showing only successes invites the reviewer to go looking for the failure themselves.
+`1.jpeg`–`19.jpeg` carry no meaning on purpose. [`../../results/README.md`](../../results/README.md) maps every number to its garment, its quality note, and whether it is a featured or weak case. Keeping the mapping in one document means it can be corrected or extended without renaming committed files.
+
+## Coverage and gaps
+
+Represented: block prints, all-over florals, dense embroidery, ornamental borders, patchwork scene prints, plain fabrics, and two-piece sets where kameez and trousers differ (see `13.jpeg`).
+
+Not represented — and documented as known limitations in [`../../docs/limitations.md`](../../docs/limitations.md):
+
+- **No dupatta in any sample.** Every strip is a kameez-and-trouser two-piece. Semi-transparent draped layers are the weakest case and are a dedicated workstream.
+- No off-frontal or seated poses, cluttered backgrounds, extreme lighting, or low-resolution uploads.
 
 ## Privacy
 
-Only include person photographs you have the right to publish. This repository is public.
+Only person photographs the project has the right to publish are included. This repository is public.

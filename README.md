@@ -108,13 +108,15 @@ The model runs as a **serverless** GPU worker, billed per request, so a seller c
 | Eastern-wear paired dataset (1,502 pairs) | Complete |
 | Fine-tuned checkpoint (~12 GB) | Complete |
 | Serverless GPU inference worker | Deployed |
-| Mahila storefront | Live — **browse-only at present, see note below** |
+| Mahila storefront | [Live](https://mahila-fyp.vercel.app) — **browse-only at present, see note below** |
 | Evaluation harness (`evaluate_tryon.py`) | Built; full metric run in progress |
 | Documentation package | In progress |
 
 ### ⚠️ Note on the live demo
 
-The Mahila storefront is publicly reachable and the catalog and try-on interface can be browsed, but **interactive try-on is not accepting live requests at the time of writing** — the GPU worker is not kept warm continuously. The try-on outputs in [`results/`](results/) are real outputs from this system, generated through this pipeline.
+The Mahila storefront is at **https://mahila-fyp.vercel.app** and is fully browsable — catalog, product pages, and the AI Try-On page. **Interactive try-on is not accepting live requests at the time of writing** — the GPU worker is not kept warm continuously. The site's own try-on page carries the status badge *"Live on Mahila · Still actively in development"*.
+
+The 19 try-on outputs in [`results/`](results/) are real outputs from this system, generated through this pipeline.
 
 A live interactive window will be available for the demonstration round.
 
@@ -188,7 +190,7 @@ Everything required to evaluate the work — architecture, method at design leve
 
 Reviewers and judges who need access to withheld material — training code, dataset samples, or a live inference window — can request it at **CONTACT_EMAIL**.
 
-Live storefront: **STOREFRONT_URL**
+Live storefront: **https://mahila-fyp.vercel.app**
 
 ---
 
