@@ -187,7 +187,7 @@ Everything required to evaluate the work — architecture, method at design leve
 
 ## Contact
 
-Reviewers and judges who need access to withheld material — training code, dataset samples, or a live inference window — can request it at **CONTACT_EMAIL**.
+Reviewers and judges who need access to withheld material — training code, dataset samples, or a live inference window — can request it at **aivirtualtryonmirror@gmail.com**.
 
 Live storefront: **https://mahila-fyp.vercel.app**
 
