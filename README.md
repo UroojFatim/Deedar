@@ -18,7 +18,7 @@ This is the **evidence and documentation repository** for the Deedar submission.
 | Repository | Component | Access |
 |---|---|---|
 | `deedar` *(this repo)* | Documentation, results, proposal | Public |
-| [`mahila`](https://github.com/USERNAME/mahila) | Next.js storefront — the reference implementation | Public |
+| [`mahila`](https://github.com/UroojFatim/mahila) | Next.js storefront — the reference implementation | Public |
 | `deedar-api` | Inference backend and service endpoints | Private — pending IP review |
 | `deedar-dashboard` | Brand-facing catalog and usage dashboard | Private |
 | `deedar-widget` | Embeddable try-on widget for third-party sites | In development |
